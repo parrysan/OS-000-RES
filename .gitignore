@@ -1,0 +1,41 @@
+# Client engagements — private, never versioned in the public repo
+properties/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+
+# Environment — secrets live in the GLOBAL .env at agent-config/.env, never per-project
+.env
+.env.*
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Secrets — defensive matches in case anything leaks past the .env rule
+*.pem
+*.key
+service-account*.json
+credentials*.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
