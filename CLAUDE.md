@@ -42,6 +42,7 @@ created: "2026-07-04"
 | **Project docs** | `./docs/` (charter: `docs/research-domain-design.md` — pending, retrofit per skill-centres.md) |
 | **Vault project page** | `Open-Memory-Vault/projects/OS-018-Research-Domain/README.md` |
 | **GitHub repo** | https://github.com/parrysan/OS-018-Research-Domain |
+| **Research store** | [OG-Research/OS-018-Research-Domain](https://drive.google.com/drive/folders/14jvwSaJnOcCO_IRlav3dtpU5pW3JzjvE) (`research/`, `assets/`, `deliverables/`) |
 | **External systems** | NotebookLM, Perplexity, skills.sh registry |
 
 ---
