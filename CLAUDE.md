@@ -50,7 +50,7 @@ created: "2026-07-04"
 ## Live references
 
 - **Front door**: the global `research` router skill (existing — stays in the global library)
-- **Toolkit (curated, global)**: `deep-research`, `research-deep-dive`, `research-notebooklm`, `research-video`, `research-video-inbox`, `research-obsidian`, `research-etsy-monitor`, `daily-research`, `last30days`
+- **Toolkit (curated, global)**: `deep-research`, `research-deep-dive`, `research-notebooklm`, `research-video`, `og-res-video-yt`, `research-obsidian`, `research-etsy-monitor`, `daily-research`, `last30days`
 - **Research Desk**: the ai-os floor sub-area (`~/OG/ai-os/AGENTS.md`) — this project is its home office
 - **Credentials**: none stored here
 
