@@ -1,17 +1,17 @@
 ---
-title: "OS-018 — Research Domain"
+title: "OS-000-RES — Research Skill Centre"
 type: project-bootstrap
 created: "2026-07-04"
 ---
 
-# OS-018 — Research Domain
+# OS-000-RES — Research Skill Centre
 
 > **Bootstrap order — read these in order before doing any work in this project:**
 >
 > 1. `~/.claude/CLAUDE.md` → `Open-Memory-Vault/system/identity/MASTER-PROMPT.md` — Phil's identity (auto-loaded via symlink in Claude Code; other tools should mirror this).
 > 2. `~/AGENT.md` → `agent-config/AGENT.md` — global operating manual (work style, skills routing, secrets policy, layering rules in §2.10).
 > 3. `Open-Memory-Vault/AGENTS.md` — vault operating contract (read **only** if you will write to the vault during this session).
-> 4. `Open-Memory-Vault/projects/OS-018-Research-Domain/README.md` — durable project page (status, decisions, recent activity, vault-side context).
+> 4. `Open-Memory-Vault/projects/OS-000-RES/README.md` — durable project page (status, decisions, recent activity, vault-side context).
 > 5. **This file (`CLAUDE.md`)** — project-specific overrides and live operational references (below).
 >
 > **The project's `CLAUDE.md` is a bootstrap manifest, not a knowledge dump.** It points at everything else. Durable knowledge lives in the vault project page. Do not duplicate.
@@ -20,17 +20,17 @@ created: "2026-07-04"
 
 ## At a glance
 
-- **Code**: `OS-018`
-- **Name**: Research Domain
+- **Code**: `OS-000`
+- **Name**: RES — Research Skill Centre
 - **Stakeholder**: Phil (self)
 - **Type**: `aios`
 - **Status**: `active`
 - **Priority**: `medium`
 - **Revenue lane**: `4-aios`
 - **Autonomy mode**: `autopilot` — research sweeps run end-to-end; Phil reviews at synthesis checkpoints.
-- **Skill centre**: `Research`
+- **Skill centre**: `Research` (code `res`)
 - **Purpose** (one sentence): The **Research Skill Centre** — the AIOS centre of excellence for market, competitor, SERP, and deep-source intelligence: home for the research toolkit's standards, playbooks, and commissioned engagements (skill-centre pattern: `~/OG/ai-os/skill-centres.md`).
-- **Last touched**: `2026-07-04`
+- **Last touched**: `2026-07-09`
 
 ---
 
@@ -38,11 +38,12 @@ created: "2026-07-04"
 
 | Resource | Location |
 |---|---|
-| **Code root** | this folder (`dev/OS-018-Research-Domain/`) |
+| **Code root** | this folder (`dev/OS-000-RES/`) |
 | **Project docs** | `./docs/` (charter: `docs/research-domain-design.md` — pending, retrofit per skill-centres.md) |
-| **Vault project page** | `Open-Memory-Vault/projects/OS-018-Research-Domain/README.md` |
-| **GitHub repo** | https://github.com/parrysan/OS-018-Research-Domain |
-| **Research store** | [OG-Research/OS-018-Research-Domain](https://drive.google.com/drive/folders/14jvwSaJnOcCO_IRlav3dtpU5pW3JzjvE) (`research/`, `assets/`, `deliverables/`) |
+| **Intelligence** | `./docs/intelligence/digests/` (og-res-video-yt cron writes durable per-video digests here) |
+| **Vault project page** | `Open-Memory-Vault/projects/OS-000-RES/README.md` |
+| **GitHub repo** | https://github.com/parrysan/OS-000-RES |
+| **Research store** | [OG-Research/OS-000-RES](https://drive.google.com/drive/folders/14jvwSaJnOcCO_IRlav3dtpU5pW3JzjvE) (`research/`, `assets/`, `deliverables/`) — Drive folder ID stable; display-name rename pending |
 | **External systems** | NotebookLM, Perplexity, skills.sh registry |
 
 ---

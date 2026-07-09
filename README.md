@@ -1,17 +1,17 @@
-# OS-018-Research-Domain
+# OS-000-RES — Research Skill Centre
 
-> The Research Skill Centre — the AIOS centre of excellence for market, competitor, SERP, and deep-source intelligence.
+> The Research Skill Centre — the AIOS centre of excellence for market, competitor, SERP, and deep-source intelligence. A skill-centre home in the `OS-000-AIOS` family (code `res`).
 
 ## Where to start
 
 - **For working on this project**: read `CLAUDE.md` in this folder. It is the bootstrap manifest — it tells any LLM (or human) which files to read and in what order.
-- **For project status, decisions, and history**: see the vault project page at `Open-Memory-Vault/projects/OS-018-Research-Domain/README.md`.
+- **For project status, decisions, and history**: see the vault project page at `Open-Memory-Vault/projects/OS-000-RES/README.md`.
 
 ## Quick facts
 
-- **Project code**: OS-018-Research-Domain
+- **Project code**: OS-000-RES  (renamed from OS-018-Research-Domain, 2026-07-09)
 - **Created**: 2026-07-04
-- **GitHub**: https://github.com/parrysan/OS-018-Research-Domain
+- **GitHub**: https://github.com/parrysan/OS-000-RES
 
 ## Structure
 
