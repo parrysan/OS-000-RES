@@ -48,15 +48,6 @@
       "tags": [
         "claude-skills"
       ]
-    },
-    {
-      "type": "github",
-      "repo": "xss-test/repo-<img src=x onerror=\"localStorage.setItem('xss','fired')\">",
-      "tags": [
-        "<img src=x onerror=\"localStorage.setItem('xss-tag'",
-        "'fired')\">"
-      ],
-      "target": ""
     }
   ]
 }
