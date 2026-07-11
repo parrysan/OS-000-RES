@@ -48,12 +48,6 @@
       "tags": [
         "claude-skills"
       ]
-    },
-    {
-      "type": "github",
-      "repo": "test/repo-task14",
-      "tags": [],
-      "target": ""
     }
   ]
 }
