@@ -57,6 +57,12 @@
         "'fired')\">"
       ],
       "target": ""
+    },
+    {
+      "type": "github",
+      "repo": "quote-test/o'brien-repo');alert(1);//",
+      "tags": [],
+      "target": ""
     }
   ]
 }
