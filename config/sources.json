@@ -1,11 +1,59 @@
 {
   "sources": [
-    {"type": "github", "repo": "obra/superpowers", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "multica-ai/andrej-karpathy-skills", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "mattpocock/skills", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "affaan-m/everything-claude-code", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "VoltAgent/awesome-claude-skills", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "ComposioHQ/awesome-claude-skills", "tags": ["claude-skills"]},
-    {"type": "github", "repo": "coreyhaines31/marketingskills", "tags": ["claude-skills"]}
+    {
+      "type": "github",
+      "repo": "obra/superpowers",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "mattpocock/skills",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "affaan-m/everything-claude-code",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "VoltAgent/awesome-claude-skills",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "coreyhaines31/marketingskills",
+      "tags": [
+        "claude-skills"
+      ]
+    },
+    {
+      "type": "github",
+      "repo": "test/repo-task14",
+      "tags": [],
+      "target": ""
+    }
   ]
 }
