@@ -222,6 +222,56 @@
       font-weight: 500;
     }
 
+    .tag-primary {
+      background: #22c55e;
+      color: white;
+      font-weight: 600;
+    }
+
+    .vault-capture-info {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+    }
+
+    .vault-capture-info h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #15803d;
+      margin: 0 0 0.75rem 0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .vault-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      align-items: baseline;
+    }
+
+    .vault-label {
+      font-weight: 600;
+      color: #166534;
+      min-width: 80px;
+    }
+
+    .vault-value {
+      color: #374151;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 0.75rem;
+    }
+
+    .vault-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
     .loading {
       text-align: center;
       padding: 3rem;
@@ -332,6 +382,28 @@
       .tag {
         background: #065f46;
         color: #86efac;
+      }
+
+      .tag-primary {
+        background: #22c55e;
+        color: #065f46;
+      }
+
+      .vault-capture-info {
+        background: #065f46;
+        border-left-color: #4ade80;
+      }
+
+      .vault-capture-info h3 {
+        color: #86efac;
+      }
+
+      .vault-label {
+        color: #86efac;
+      }
+
+      .vault-value {
+        color: #d1d5db;
       }
     }
   </style>
@@ -508,8 +580,63 @@
         bodyHtml += `<div class="modal-meta-tags"><span class="tag">topic: ${digest.vaultTopic}</span></div>`;
       }
 
-      document.getElementById('modalBody').innerHTML = bodyHtml;
+      // Add vault capture info
+      const vaultInfo = generateVaultCaptureInfo(digest);
+      document.getElementById('modalBody').innerHTML = vaultInfo + bodyHtml;
       modal.classList.add('active');
+    }
+
+    function generateVaultCaptureInfo(digest) {
+      // Infer domain from vault topic or content
+      const topicToDomain = {
+        'productized-ai-consulting': 'revenue',
+        'ai-tools': 'ai-strategy',
+        'workflow': 'operations',
+        'design': 'design',
+        'seo': 'seo',
+        'engineering': 'eng'
+      };
+
+      let domain = 'ai-strategy'; // default
+      if (digest.vaultTopic) {
+        const inferred = Object.entries(topicToDomain).find(([topic]) =>
+          digest.vaultTopic.toLowerCase().includes(topic.split('-')[0])
+        );
+        if (inferred) domain = inferred[1];
+      }
+
+      // Infer topic name from digest title if not available
+      const topic = digest.vaultTopic || digest.title
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .split(/\s+/)
+        .filter(w => w.length > 3)
+        .slice(0, 3)
+        .join('-');
+
+      return `
+        <div class="vault-capture-info">
+          <h3>📦 Vault Capture</h3>
+          <div class="vault-row">
+            <span class="vault-label">Domain:</span>
+            <span class="vault-tags">
+              <span class="tag tag-primary">${domain}</span>
+            </span>
+          </div>
+          <div class="vault-row">
+            <span class="vault-label">Topic:</span>
+            <span class="vault-value">${topic}</span>
+          </div>
+          <div class="vault-row">
+            <span class="vault-label">Path:</span>
+            <span class="vault-value">vault/wiki/${topic}.md</span>
+          </div>
+          <div class="vault-row">
+            <span class="vault-label">Source:</span>
+            <span class="vault-value">${digest.source || 'research digest'}</span>
+          </div>
+        </div>
+      `;
     }
 
     function closeModal() {
