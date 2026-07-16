@@ -14,42 +14,48 @@
       "repo": "multica-ai/andrej-karpathy-skills",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "res"
     },
     {
       "type": "github",
       "repo": "mattpocock/skills",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "res"
     },
     {
       "type": "github",
       "repo": "affaan-m/everything-claude-code",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "res"
     },
     {
       "type": "github",
       "repo": "VoltAgent/awesome-claude-skills",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "eng"
     },
     {
       "type": "github",
       "repo": "ComposioHQ/awesome-claude-skills",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "res"
     },
     {
       "type": "github",
       "repo": "coreyhaines31/marketingskills",
       "tags": [
         "claude-skills"
-      ]
+      ],
+      "target": "seo"
     }
   ]
 }
