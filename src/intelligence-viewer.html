@@ -424,7 +424,7 @@
         digests = [];
         for (const file of digestFiles) {
           try {
-            const response = await fetch(`../docs/intelligence/digests/${file}`);
+            const response = await fetch(`docs/intelligence/digests/${file}`);
             if (response.ok) {
               const content = await response.text();
               const digest = parseDigest(file, content);
