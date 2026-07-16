@@ -56,6 +56,17 @@
         "claude-skills"
       ],
       "target": "seo"
+    },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/@TheNextNewThingAI",
+      "tags": [
+        "engineering",
+        "tools",
+        "claude-skills",
+        "skills"
+      ],
+      "target": "res"
     }
   ]
 }
