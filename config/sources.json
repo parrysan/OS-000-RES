@@ -4,7 +4,8 @@
       "type": "github",
       "repo": "obra/superpowers",
       "tags": [
-        "claude-skills"
+        "claude-skills",
+        "engineering"
       ],
       "target": "eng"
     },
